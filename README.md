@@ -1,10 +1,10 @@
-# rust-by-sample
+# rust-by-example
 Let's study Rust
 Based on [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 
 ## Index
 - [x] 1. Hello World
-- [ ] 2. Primitives
+- [x] 2. Primitives
 - [ ] 3. Custom Types
 - [ ] 4. Variable Bindings
 - [ ] 5. Types
