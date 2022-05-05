@@ -6,7 +6,7 @@ Based on [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [x] 1. Hello World
 - [x] 2. Primitives
 - [x] 3. Custom Types
-- [ ] 4. Variable Bindings
+- [x] 4. Variable Bindings
 - [ ] 5. Types
 - [ ] 6. Conversion
 - [ ] 7. Expressions
