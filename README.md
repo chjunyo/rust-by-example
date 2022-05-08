@@ -9,7 +9,7 @@ Based on [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [x] 4. Variable Bindings
 - [x] 5. Types
 - [x] 6. Conversion
-- [ ] 7. Expressions
+- [x] 7. Expressions
 - [ ] 8. Flow of Control
 - [ ] 9. Functions
 - [ ] 10. Moduels
