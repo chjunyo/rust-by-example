@@ -6,6 +6,14 @@ enum Color {
     RGB(u32, u32, u32),
 }
 
+fn age() -> u32 {
+    15
+}
+
+fn some_number() -> Option<u32> {
+    Some(42)
+}
+
 fn main() {
     let number = 13;
 
@@ -105,5 +113,37 @@ fn main() {
         Foo { x: (1, b), y } => println!("First of x is 1, b = {}, y = {}", b, y), // First of x is 1, b = 2, y = 3
         Foo { y: 2, x: i } => println!("y is 2, i = {:?}", i),
         Foo { y, .. } => println!("y = {}, we don't care about x", y),
+    }
+
+    // Guards
+    let pair = (2, -2);
+    println!("Tell me about {:?}", pair);
+    match pair {
+        (x, y) if x == y => println!("These are twins"),
+        (x, y) if x + y == 0 => println!("Antimatter, kaboom!"), // Antimatter, kaboom!
+        (x, _) if x % 2 == 1 => println!("The first one is odd"),
+        _ => println!("No correlaton..."),
+    }
+
+    let number: u8 = 4;
+    match number {
+        i if i == 0 => println!("Zero"),
+        i if i > 0 => println!("Greater than zero"), // Greater than zero
+        _ => println!("Fell through"),
+    }
+
+    // Binding
+    println!("Tell me what type of person you are");
+    match age() {
+        0 => println!("I haven't celebrated my first birthday yet"),
+        n @ 1..=12 => println!("I'm a child of age {:?}", n),
+        n @ 13..=19 => println!("I'm a teen of age {:?}", n), // I'm a teen of age 15
+        n => println!("I'm an old person of age {:?}", n),
+    }
+
+    match some_number() {
+        Some(n @ 42) => println!("The Answer: {}!", n), // The Answer: 42!
+        Some(n) => println!("Not interesting... {}", n),
+        _ => (),
     }
 }
