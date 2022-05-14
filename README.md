@@ -10,7 +10,7 @@ Based on [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [x] 5. Types
 - [x] 6. Conversion
 - [x] 7. Expressions
-- [ ] 8. Flow of Control
+- [x] 8. Flow of Control
 - [ ] 9. Functions
 - [ ] 10. Moduels
 - [ ] 11. Crates
