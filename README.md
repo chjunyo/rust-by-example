@@ -11,8 +11,8 @@ Based on [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [x] 6. Conversion
 - [x] 7. Expressions
 - [x] 8. Flow of Control
-- [ ] 9. Functions
-- [ ] 10. Moduels
+- [x] 9. Functions
+- [x] 10. Moduels
 - [ ] 11. Crates
 - [ ] 12. Cargo
 - [ ] 13. Attributes
